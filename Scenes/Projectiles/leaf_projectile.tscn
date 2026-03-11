@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://b278rtlcgh5o3"]
+
+[ext_resource type="Script" uid="uid://c7s5j6fxnn3hd" path="res://Scenes/Projectiles/leaf_projectile.gd" id="1_ebp44"]
+[ext_resource type="Texture2D" uid="uid://d1q5qi5xu56ex" path="res://Graphics/Projectiles/leaf_projectile.png" id="1_qnk6s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ugcdf"]
+radius = 26.0
+
+[node name="LeafProjectile" type="Area2D"]
+collision_layer = 8
+collision_mask = 5
+script = ExtResource("1_ebp44")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, 4)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_qnk6s")
+
+[node name="ProjectileTimeout" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ugcdf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="ProjectileTimeout" to="." method="_on_projectile_timeout_timeout"]

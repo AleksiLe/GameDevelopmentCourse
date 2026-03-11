@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://cffkhviw5r42g"]
+
+[ext_resource type="Script" uid="uid://d3k86ewljo5pc" path="res://Scenes/Projectiles/wizard_attack.gd" id="1_mbwpa"]
+[ext_resource type="Texture2D" uid="uid://cawieletdvwbd" path="res://Graphics/Projectiles/wizard_projectile.png" id="2_weyei"]
+[ext_resource type="Texture2D" uid="uid://304ie858qjad" path="res://Graphics/Projectiles/wizard_projectile_flip.png" id="3_iyg6k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iw1e1"]
+size = Vector2(30, 90)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_42evx"]
+animations = [{
+"frames": [{
+"duration": 0.8,
+"texture": ExtResource("2_weyei")
+}, {
+"duration": 0.8,
+"texture": ExtResource("3_iyg6k")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="WizardAttack" type="Area2D"]
+scale = Vector2(0.8, 0.8)
+collision_layer = 8
+collision_mask = 6
+script = ExtResource("1_mbwpa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_iw1e1")
+
+[node name="SelfDestructTimer" type="Timer" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_42evx")
+frame_progress = 0.64863276
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="SelfDestructTimer" to="." method="_on_self_destruct_timer_timeout"]

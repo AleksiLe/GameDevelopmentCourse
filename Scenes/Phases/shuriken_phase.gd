@@ -1,0 +1,13 @@
+extends Node2D
+@export var rotation_speed: int = 2.5
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	$FirstCircle.rotation += delta * rotation_speed
+	$SecondCircle.rotation += delta * -(rotation_speed - 1.35)
+	$ThirdCircle.rotation += delta * (rotation_speed - 1.6)

@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1ril8qkxsqnj"]
+
+[ext_resource type="Script" uid="uid://bqdcvqhdsabwl" path="res://Scenes/Levels/level.gd" id="1_7x7pb"]
+[ext_resource type="PackedScene" uid="uid://qx8jgxd0hsmj" path="res://Scenes/Characters/player.tscn" id="2_7x7pb"]
+[ext_resource type="PackedScene" uid="uid://b6tv77esiei30" path="res://Scenes/UserInterface/ui.tscn" id="3_yjxcc"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_7x7pb")
+
+[node name="Ground" type="Node2D" parent="."]
+
+[node name="Projectiles" type="Node2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("2_7x7pb")]
+position = Vector2(332, 299)
+scale = Vector2(0.8, 0.8)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(2, 2)
+zoom = Vector2(0.4, 0.4)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+
+[node name="Enemies" type="Node2D" parent="."]
+position = Vector2(3.0517578e-05, 3.0517578e-05)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Objects" type="Node2D" parent="."]
+
+[node name="UI" parent="." instance=ExtResource("3_yjxcc")]
+
+[connection signal="wizard_attack" from="Player" to="." method="_on_player_wizard_attack"]

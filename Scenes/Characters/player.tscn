@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://qx8jgxd0hsmj"]
+
+[ext_resource type="Script" uid="uid://cqhm7y8cijdun" path="res://Scenes/Characters/player.gd" id="1_3etf2"]
+[ext_resource type="Texture2D" uid="uid://du8ea62406onu" path="res://Graphics/Characters/wizard_left.png" id="2_40svl"]
+[ext_resource type="Texture2D" uid="uid://meiwjoj6qrm3" path="res://Graphics/Characters/wizard_left_shoot.png" id="3_al8ar"]
+[ext_resource type="Texture2D" uid="uid://dbb1nmmfibeh" path="res://Graphics/Characters/wizard_middle_shoot.png" id="3_gy20a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_al8ar"]
+size = Vector2(61, 93)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gy20a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_40svl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gy20a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_al8ar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gy20a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_40svl")
+}],
+"loop": false,
+"name": &"front_shoot",
+"speed": 10.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 30
+script = ExtResource("1_3etf2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 8.5)
+shape = SubResource("RectangleShape2D_al8ar")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_gy20a")
+animation = &"front_shoot"
+frame = 4
+frame_progress = 1.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

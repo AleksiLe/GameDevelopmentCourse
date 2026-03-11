@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://csk1j7ardm0ht"]
+
+[ext_resource type="Texture2D" uid="uid://bc4c00sja45rb" path="res://Graphics/Effects/Smokescreen/1.png" id="1_p70u8"]
+[ext_resource type="Texture2D" uid="uid://csqdi86ux03ep" path="res://Graphics/Effects/Smokescreen/2.png" id="2_g1ssc"]
+[ext_resource type="Texture2D" uid="uid://clyq1n40s7nyk" path="res://Graphics/Effects/Smokescreen/3.png" id="3_quyjp"]
+[ext_resource type="Texture2D" uid="uid://6riraa3ob7kl" path="res://Graphics/Effects/Smokescreen/4.png" id="4_qvotx"]
+[ext_resource type="Texture2D" uid="uid://d3c7vashurwyj" path="res://Graphics/Effects/Smokescreen/5.png" id="5_c4t6g"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kc7at"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_p70u8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_g1ssc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_quyjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qvotx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_c4t6g")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="SmokeScreen" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_kc7at")
+autoplay = "default"
+frame = 6
+frame_progress = 1.0

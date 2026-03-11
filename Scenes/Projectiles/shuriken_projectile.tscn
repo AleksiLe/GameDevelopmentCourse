@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bapw4t1jkls0c"]
+
+[ext_resource type="Script" uid="uid://10xdcatdew5w" path="res://Scenes/Projectiles/shuriken_projectile.gd" id="1_7kkrd"]
+[ext_resource type="Texture2D" uid="uid://bng41kgaqb3ic" path="res://Graphics/Projectiles/shuriken_projectile.png" id="2_hci8x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7kkrd"]
+radius = 36.0
+
+[node name="ShurikenProjectile" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_7kkrd")
+
+[node name="ShurikenProjectile" type="Sprite2D" parent="."]
+texture = ExtResource("2_hci8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_7kkrd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

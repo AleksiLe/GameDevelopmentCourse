@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3wrqeqjgccrp"]
+
+[ext_resource type="Texture2D" uid="uid://dhycs5e3we4gw" path="res://Graphics/Characters/CastleEnemies/ghost.png" id="1_305sn"]
+[ext_resource type="Script" uid="uid://t4no1sb401qa" path="res://Scenes/Characters/ghost.gd" id="1_vhg6s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_305sn"]
+size = Vector2(60, 70)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vhg6s"]
+radius = 1156.837
+
+[node name="Ghost" type="CharacterBody2D" groups=["Ghosts"]]
+collision_layer = 2
+collision_mask = 15
+script = ExtResource("1_vhg6s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9.094947e-13, -3.5762787e-07)
+scale = Vector2(1.22, 1.189899)
+texture = ExtResource("1_305sn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_305sn")
+
+[node name="AttackArea" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+shape = SubResource("CircleShape2D_vhg6s")
+
+[node name="AttackCooldown" type="Timer" parent="."]
+wait_time = 0.75
+
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
+[connection signal="body_exited" from="AttackArea" to="." method="_on_attack_area_body_exited"]
+[connection signal="timeout" from="AttackCooldown" to="." method="_on_attack_cooldown_timeout"]

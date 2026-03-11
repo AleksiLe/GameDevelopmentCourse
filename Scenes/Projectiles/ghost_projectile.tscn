@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bm0768iout51c"]
+
+[ext_resource type="Texture2D" uid="uid://dhfjs02abr5p8" path="res://Graphics/Projectiles/ghost_projectile.png" id="1_p321t"]
+[ext_resource type="Script" uid="uid://f1nielkye8ew" path="res://Scenes/Projectiles/ghost_projectile.gd" id="1_pds62"]
+
+[node name="GhostProjectile" type="Area2D"]
+scale = Vector2(0.35, 0.35)
+collision_layer = 8
+collision_mask = 5
+script = ExtResource("1_pds62")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-5.714285, 1.0658141e-13)
+rotation = 3.1415927
+texture = ExtResource("1_p321t")
+
+[node name="ProjectileTimeout" type="Timer" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+rotation = -3.1415925
+scale = Vector2(0.9999998, 0.9999998)
+polygon = PackedVector2Array(-19, 24, -55, 24, -55, 12, -67, 12, -67, 0, -79, 0, -79, -48, -67, -48, -67, -36, -56, -36, -56, -23, -43, -23, -43, -12, -7, -12, 6, -12, 41, -12, 41, -24, 65, -24, 65, -36, 77, -36, 77, -48, 89, -48, 89, 0, 77, 0, 77, 12, 53, 12, 53, 24, 17, 24, 17, 36, -19, 36)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="ProjectileTimeout" to="." method="_on_projectile_timeout_timeout"]

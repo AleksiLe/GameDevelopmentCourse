@@ -1,0 +1,1443 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1xp8vvltah14"]
+
+[ext_resource type="PackedScene" uid="uid://bapw4t1jkls0c" path="res://Scenes/Projectiles/shuriken_projectile.tscn" id="1_1t6ts"]
+[ext_resource type="Script" uid="uid://dtnwk3buppnns" path="res://Scenes/Phases/shuriken_phase.gd" id="1_jbeev"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jbeev"]
+radius = 897.0139
+
+[node name="ShurikenPhase" type="Node2D"]
+script = ExtResource("1_jbeev")
+
+[node name="Static" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile" parent="Static" instance=ExtResource("1_1t6ts")]
+
+[node name="ShurikenProjectile2" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(85, 0)
+
+[node name="ShurikenProjectile7" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(85, 85)
+
+[node name="ShurikenProjectile8" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(1, 85)
+
+[node name="ShurikenProjectile9" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-84, 84)
+
+[node name="ShurikenProjectile3" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(85, -85)
+
+[node name="ShurikenProjectile4" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(0, -85)
+
+[node name="ShurikenProjectile5" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-83, -84)
+
+[node name="ShurikenProjectile6" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-85, 0)
+
+[node name="ShurikenProjectile19" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-1, -510)
+
+[node name="ShurikenProjectile20" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(84, -510)
+
+[node name="ShurikenProjectile21" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(84, -425)
+
+[node name="ShurikenProjectile22" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(0, -425)
+
+[node name="ShurikenProjectile23" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-85, -426)
+
+[node name="ShurikenProjectile24" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(84, -595)
+
+[node name="ShurikenProjectile25" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-1, -595)
+
+[node name="ShurikenProjectile26" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-84, -594)
+
+[node name="ShurikenProjectile27" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-86, -510)
+
+[node name="ShurikenProjectile55" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-719, -586)
+
+[node name="ShurikenProjectile56" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-671, -647)
+
+[node name="ShurikenProjectile57" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-610, -700)
+
+[node name="ShurikenProjectile58" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-778, -638)
+
+[node name="ShurikenProjectile59" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-730, -699)
+
+[node name="ShurikenProjectile60" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-669, -752)
+
+[node name="ShurikenProjectile61" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-543, -750)
+
+[node name="ShurikenProjectile62" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-479, -801)
+
+[node name="ShurikenProjectile63" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-406, -835)
+
+[node name="ShurikenProjectile64" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-592, -809)
+
+[node name="ShurikenProjectile65" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-522, -864)
+
+[node name="ShurikenProjectile66" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-438, -907)
+
+[node name="ShurikenProjectile67" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-332, -866)
+
+[node name="ShurikenProjectile68" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-360, -940)
+
+[node name="ShurikenProjectile69" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-274, -971)
+
+[node name="ShurikenProjectile70" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-251, -898)
+
+[node name="ShurikenProjectile71" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-168, -912)
+
+[node name="ShurikenProjectile72" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-90, -924)
+
+[node name="ShurikenProjectile73" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-9, -935)
+
+[node name="ShurikenProjectile74" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(74, -927)
+
+[node name="ShurikenProjectile75" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(159, -916)
+
+[node name="ShurikenProjectile76" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(243, -902)
+
+[node name="ShurikenProjectile77" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(317, -875)
+
+[node name="ShurikenProjectile78" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(389, -850)
+
+[node name="ShurikenProjectile79" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(462, -814)
+
+[node name="ShurikenProjectile80" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(527, -774)
+
+[node name="ShurikenProjectile81" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(592, -726)
+
+[node name="ShurikenProjectile82" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(651, -671)
+
+[node name="ShurikenProjectile83" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(702, -612)
+
+[node name="ShurikenProjectile84" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(752, -554)
+
+[node name="ShurikenProjectile85" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(796, -493)
+
+[node name="ShurikenProjectile86" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(830, -420)
+
+[node name="ShurikenProjectile87" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(861, -347)
+
+[node name="ShurikenProjectile88" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(890, -270)
+
+[node name="ShurikenProjectile89" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(911, -189)
+
+[node name="ShurikenProjectile90" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(923, -107)
+
+[node name="ShurikenProjectile91" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(931, -26)
+
+[node name="ShurikenProjectile92" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(927, 55)
+
+[node name="ShurikenProjectile93" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(917, 138)
+
+[node name="ShurikenProjectile94" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(906, 223)
+
+[node name="ShurikenProjectile95" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(881, 305)
+
+[node name="ShurikenProjectile96" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(847, 380)
+
+[node name="ShurikenProjectile97" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(816, 455)
+
+[node name="ShurikenProjectile98" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(771, 523)
+
+[node name="ShurikenProjectile99" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(720, 590)
+
+[node name="ShurikenProjectile100" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(607, 706)
+
+[node name="ShurikenProjectile102" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(545, 754)
+
+[node name="ShurikenProjectile103" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(482, 803)
+
+[node name="ShurikenProjectile104" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(413, 837)
+
+[node name="ShurikenProjectile105" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(337, 871)
+
+[node name="ShurikenProjectile106" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(262, 897)
+
+[node name="ShurikenProjectile107" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(181, 917)
+
+[node name="ShurikenProjectile108" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(102, 930)
+
+[node name="ShurikenProjectile109" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(19, 937)
+
+[node name="ShurikenProjectile110" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-64, 931.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile111" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-145, 921.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile112" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-231.00003, 906.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile113" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-309, 878.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile114" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-387.00003, 847.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile115" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-468.00003, 810.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile116" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-535, 766)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile117" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-608, 716.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile118" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-665, 659.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile119" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-713, 598.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile120" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-764.00006, 532)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile121" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-812.00006, 468.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile122" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-846.00006, 393.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile123" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-878.0001, 317.00003)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile124" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-904.00006, 239.00003)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile125" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-914.00006, 161.00002)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile126" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-930.00006, 83.999985)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile127" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-936.0001, 3)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile128" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-928.00006, -74.99999)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile129" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-918, -152.99998)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile130" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-902.00006, -239)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile131" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-877.00006, -315)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile132" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-844, -393)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile133" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-814, -462)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile135" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-837.00006, -568)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile136" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-883.00006, -498.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile137" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-921.00006, -419)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile138" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-959.00006, -336.00003)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile139" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-987.00006, -253)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile140" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-1001.00006, -170)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile141" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-1018.00006, -77)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile142" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-1018.00006, 1.9999924)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile143" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-1011, 98.99999)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile144" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-997.0001, 178)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile145" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-980.00006, 264.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile146" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-952.00006, 343.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile147" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-921.00006, 429.00003)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile148" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-883, 505.00003)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile149" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-831.0001, 584)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile150" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-776.0001, 646.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile151" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-724, 722)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile152" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-669.00006, 781.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile153" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-593.00006, 843.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile154" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-514.00006, 888.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile155" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-424.00006, 926.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile156" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-338.00003, 957.0001)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile157" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-259.00003, 985.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile158" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-169.00003, 1002.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile159" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-72.000015, 1023.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile160" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(28.000015, 1026.0001)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile161" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(114.000015, 1019.0001)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile162" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(211, 1002.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile163" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(290, 981.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile164" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(373.00006, 953.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile165" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(449, 918.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile166" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(527.99994, 880.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile167" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(604.00006, 821.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile168" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(673.00006, 776.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile169" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(735.00006, 717.0001)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile170" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(790, 648.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile171" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(852.00006, 569.00006)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile172" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(897.0001, 490)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile173" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(928.00006, 400)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile174" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(963.0001, 314.00003)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile175" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(998.00006, 224)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile176" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(1008.00006, 138.00002)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile177" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(1011, 54.999985)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile178" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(1025, -26.000008)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile179" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(1017.99994, -117.99999)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile180" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(1001.0001, -202)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile181" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(984.0001, -287)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile182" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(954, -367)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile183" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(917, -447.00003)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile184" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(873, -532)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile185" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(831, -604)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile186" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(771.00006, -668.00006)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile187" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(709, -737.00006)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile188" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(643.00006, -795)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile189" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(574, -844)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile190" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(505, -883)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile191" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(424.00003, -926)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile192" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(339.99997, -950.00006)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile193" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(261.00003, -980.00006)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile194" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(177.00003, -995)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile195" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(85, -1010.00006)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile196" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-3.0000076, -1014.00006)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile197" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-97.00001, -1005.00006)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile198" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-189, -992.00006)
+rotation = -0.12355596
+
+[node name="ShurikenProjectile134" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-767, -525)
+rotation = 0.20151162
+
+[node name="ShurikenProjectile101" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(666, 654)
+
+[node name="ShurikenProjectile37" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-1, 766)
+
+[node name="ShurikenProjectile38" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(84, 766)
+
+[node name="ShurikenProjectile39" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(84, 851)
+
+[node name="ShurikenProjectile40" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(0, 851)
+
+[node name="ShurikenProjectile41" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-85, 850)
+
+[node name="ShurikenProjectile42" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(84, 681)
+
+[node name="ShurikenProjectile43" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-1, 681)
+
+[node name="ShurikenProjectile44" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-84, 682)
+
+[node name="ShurikenProjectile45" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-86, 766)
+
+[node name="ShurikenProjectile46" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-1, 510)
+
+[node name="ShurikenProjectile47" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(84, 510)
+
+[node name="ShurikenProjectile48" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(84, 595)
+
+[node name="ShurikenProjectile49" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(0, 595)
+
+[node name="ShurikenProjectile50" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-85, 594)
+
+[node name="ShurikenProjectile51" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(84, 425)
+
+[node name="ShurikenProjectile52" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-1, 425)
+
+[node name="ShurikenProjectile53" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-84, 426)
+
+[node name="ShurikenProjectile54" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-86, 510)
+
+[node name="ShurikenProjectile28" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(1, -764)
+
+[node name="ShurikenProjectile29" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(86, -764)
+
+[node name="ShurikenProjectile30" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(86, -679)
+
+[node name="ShurikenProjectile31" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(2, -679)
+
+[node name="ShurikenProjectile32" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-83, -680)
+
+[node name="ShurikenProjectile33" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(86, -849)
+
+[node name="ShurikenProjectile34" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(1, -849)
+
+[node name="ShurikenProjectile35" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-82, -848)
+
+[node name="ShurikenProjectile36" parent="Static" instance=ExtResource("1_1t6ts")]
+position = Vector2(-84, -764)
+
+[node name="FirstCircle" type="Node2D" parent="."]
+rotation = 7.7841682
+metadata/_edit_lock_ = true
+
+[node name="SmallPart2" type="Node2D" parent="FirstCircle"]
+position = Vector2(270, 0)
+rotation = -3.1415925
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile64" parent="FirstCircle/SmallPart2" instance=ExtResource("1_1t6ts")]
+rotation = 3.1415927
+
+[node name="ShurikenProjectile65" parent="FirstCircle/SmallPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(86, 5)
+rotation = 3.1415927
+
+[node name="ShurikenProjectile66" parent="FirstCircle/SmallPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, 80)
+rotation = 3.1415927
+
+[node name="ShurikenProjectile67" parent="FirstCircle/SmallPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(4, 95)
+rotation = 3.1415927
+
+[node name="ShurikenProjectile68" parent="FirstCircle/SmallPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-80, 109)
+rotation = 3.1415927
+
+[node name="ShurikenProjectile69" parent="FirstCircle/SmallPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, -73)
+rotation = 3.1415927
+
+[node name="ShurikenProjectile70" parent="FirstCircle/SmallPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(2, -90)
+rotation = 3.1415927
+
+[node name="ShurikenProjectile71" parent="FirstCircle/SmallPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-81, -102)
+rotation = 3.1415927
+
+[node name="ShurikenProjectile72" parent="FirstCircle/SmallPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-85, 0)
+rotation = 3.1415927
+
+[node name="SmallPart" type="Node2D" parent="FirstCircle"]
+position = Vector2(0.9998951, -251)
+rotation = 1.5707964
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile64" parent="FirstCircle/SmallPart" instance=ExtResource("1_1t6ts")]
+rotation = -1.5707964
+
+[node name="ShurikenProjectile65" parent="FirstCircle/SmallPart" instance=ExtResource("1_1t6ts")]
+position = Vector2(86, 5)
+rotation = -1.5707964
+
+[node name="ShurikenProjectile66" parent="FirstCircle/SmallPart" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, 80)
+rotation = -1.5707964
+
+[node name="ShurikenProjectile67" parent="FirstCircle/SmallPart" instance=ExtResource("1_1t6ts")]
+position = Vector2(1.3828278e-05, 87.99994)
+rotation = -1.5707964
+
+[node name="ShurikenProjectile68" parent="FirstCircle/SmallPart" instance=ExtResource("1_1t6ts")]
+position = Vector2(-82.99997, 99.999954)
+rotation = -1.5707964
+
+[node name="ShurikenProjectile69" parent="FirstCircle/SmallPart" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, -73)
+rotation = -1.5707964
+
+[node name="ShurikenProjectile70" parent="FirstCircle/SmallPart" instance=ExtResource("1_1t6ts")]
+position = Vector2(2, -90)
+rotation = -1.5707964
+
+[node name="ShurikenProjectile71" parent="FirstCircle/SmallPart" instance=ExtResource("1_1t6ts")]
+position = Vector2(-81, -102)
+rotation = -1.5707964
+
+[node name="ShurikenProjectile72" parent="FirstCircle/SmallPart" instance=ExtResource("1_1t6ts")]
+position = Vector2(-85, 0)
+rotation = -1.5707964
+
+[node name="SmallPart3" type="Node2D" parent="FirstCircle"]
+position = Vector2(-5.9999547, 259.00003)
+rotation = -1.5707963
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile64" parent="FirstCircle/SmallPart3" instance=ExtResource("1_1t6ts")]
+rotation = 1.5707964
+
+[node name="ShurikenProjectile65" parent="FirstCircle/SmallPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(86, 5)
+rotation = 1.5707964
+
+[node name="ShurikenProjectile66" parent="FirstCircle/SmallPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, 80)
+rotation = 1.5707964
+
+[node name="ShurikenProjectile67" parent="FirstCircle/SmallPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(4, 95)
+rotation = 1.5707964
+
+[node name="ShurikenProjectile68" parent="FirstCircle/SmallPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-80, 109)
+rotation = 1.5707964
+
+[node name="ShurikenProjectile69" parent="FirstCircle/SmallPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, -73)
+rotation = 1.5707964
+
+[node name="ShurikenProjectile70" parent="FirstCircle/SmallPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(2, -90)
+rotation = 1.5707964
+
+[node name="ShurikenProjectile71" parent="FirstCircle/SmallPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-81, -102)
+rotation = 1.5707964
+
+[node name="ShurikenProjectile72" parent="FirstCircle/SmallPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-85, 0)
+rotation = 1.5707964
+
+[node name="SmallPart4" type="Node2D" parent="FirstCircle"]
+position = Vector2(-267, -9)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile64" parent="FirstCircle/SmallPart4" instance=ExtResource("1_1t6ts")]
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile65" parent="FirstCircle/SmallPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(86, 5)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile66" parent="FirstCircle/SmallPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, 80)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile67" parent="FirstCircle/SmallPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(4, 95)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile68" parent="FirstCircle/SmallPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-80, 109)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile69" parent="FirstCircle/SmallPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, -73)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile70" parent="FirstCircle/SmallPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(2, -90)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile71" parent="FirstCircle/SmallPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-81, -102)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile72" parent="FirstCircle/SmallPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-85, 0)
+metadata/_edit_lock_ = true
+
+[node name="SecondCircle" type="Node2D" parent="."]
+rotation = 2.2863812
+
+[node name="MediumPart1" type="Node2D" parent="SecondCircle"]
+position = Vector2(-514, 3)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile64" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(4, 83)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile65" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(88, 71)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile66" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(107, 145)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile67" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(26, 167)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile68" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(-53, 193)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile69" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, -75)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile70" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(5, -87)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile71" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(-76, -101)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile76" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(106, -149)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile77" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(26, -178)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile78" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(-55, -199)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile73" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(78, -2)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile74" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(-2, -3)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile75" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(-90, -3)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile72" parent="SecondCircle/MediumPart1" instance=ExtResource("1_1t6ts")]
+position = Vector2(-76, 93)
+metadata/_edit_lock_ = true
+
+[node name="MediumPart2" type="Node2D" parent="SecondCircle"]
+position = Vector2(4, 514)
+rotation = -1.5707964
+
+[node name="ShurikenProjectile64" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(4, 83)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile65" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(88, 71)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile66" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(107, 145)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile67" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(26, 167)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile68" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-53, 193)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile69" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, -75)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile70" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(5, -87)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile71" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-76, -101)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile76" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(106, -149)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile77" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(26, -178)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile78" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-55, -199)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile73" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(78, -2)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile74" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-3, -1)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile75" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-90, -3)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile72" parent="SecondCircle/MediumPart2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-76, 93)
+metadata/_edit_lock_ = true
+
+[node name="MediumPart3" type="Node2D" parent="SecondCircle"]
+position = Vector2(513, -4)
+rotation = 3.1415927
+
+[node name="ShurikenProjectile64" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(4, 83)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile65" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(88, 71)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile66" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(107, 145)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile67" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(26, 167)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile68" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-53, 193)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile69" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, -75)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile70" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(5, -87)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile71" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-76, -101)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile76" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(106, -149)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile77" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(26, -178)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile78" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-55, -199)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile73" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(78, -2)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile74" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-3, -1)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile75" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-90, -3)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile72" parent="SecondCircle/MediumPart3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-76, 93)
+metadata/_edit_lock_ = true
+
+[node name="MediumPart4" type="Node2D" parent="SecondCircle"]
+position = Vector2(-2, -513)
+rotation = 1.5707964
+
+[node name="ShurikenProjectile64" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(4, 83)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile65" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(88, 71)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile66" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(107, 145)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile67" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(26, 167)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile68" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-53, 193)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile69" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(87, -75)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile70" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(5, -87)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile71" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-76, -101)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile76" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(106, -149)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile77" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(26, -178)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile78" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-55, -199)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile73" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(78, -2)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile74" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-3, -1)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile75" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-90, -3)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile72" parent="SecondCircle/MediumPart4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-76, 93)
+metadata/_edit_lock_ = true
+
+[node name="ThirdCircle" type="Node2D" parent="."]
+
+[node name="LargeCircle" type="Node2D" parent="ThirdCircle"]
+position = Vector2(-772, 0)
+
+[node name="ShurikenProjectile64" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(12, 90)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile65" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(106, 75)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile66" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(117, 151)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile67" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(34, 179)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile68" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(-60, 201)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile82" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(141, 225)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile83" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(56, 259)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile84" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(-29, 290)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile69" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(107, -80)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile70" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(8, -92)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile71" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(-75, -101)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile76" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(118, -158)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile77" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(25, -176)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile78" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(-62, -191)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile79" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(140, -236)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile80" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(57, -267)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile81" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(-29, -293)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile73" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(97, -1)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile74" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile75" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(-86, -1)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile72" parent="ThirdCircle/LargeCircle" instance=ExtResource("1_1t6ts")]
+position = Vector2(-73, 107)
+metadata/_edit_lock_ = true
+
+[node name="LargeCircle2" type="Node2D" parent="ThirdCircle"]
+position = Vector2(-1, -773)
+rotation = 1.5707964
+
+[node name="ShurikenProjectile64" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(12, 90)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile65" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(106, 75)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile66" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(117, 151)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile67" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(34, 179)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile68" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-60, 201)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile82" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(141, 225)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile83" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(56, 259)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile84" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-29, 290)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile69" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(107, -80)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile70" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(8, -92)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile71" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-75, -101)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile76" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(118, -158)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile77" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(25, -176)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile78" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-62, -191)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile79" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(140, -236)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile80" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(57, -267)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile81" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-29, -293)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile73" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(97, -1)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile74" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile75" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-86, -1)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile72" parent="ThirdCircle/LargeCircle2" instance=ExtResource("1_1t6ts")]
+position = Vector2(-73, 107)
+metadata/_edit_lock_ = true
+
+[node name="LargeCircle3" type="Node2D" parent="ThirdCircle"]
+position = Vector2(773, 1)
+rotation = 3.1415927
+
+[node name="ShurikenProjectile64" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(12, 90)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile65" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(106, 75)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile66" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(117, 151)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile67" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(34, 179)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile68" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-60, 201)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile82" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(141, 225)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile83" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(56, 259)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile84" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-29, 290)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile69" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(107, -80)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile70" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(8, -92)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile71" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-75, -101)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile76" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(118, -158)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile77" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(25, -176)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile78" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-62, -191)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile79" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(140, -236)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile80" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(57, -267)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile81" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-29, -293)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile73" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(97, -1)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile74" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile75" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-86, -1)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile72" parent="ThirdCircle/LargeCircle3" instance=ExtResource("1_1t6ts")]
+position = Vector2(-73, 107)
+metadata/_edit_lock_ = true
+
+[node name="LargeCircle4" type="Node2D" parent="ThirdCircle"]
+position = Vector2(0, 774)
+rotation = -1.5707964
+
+[node name="ShurikenProjectile64" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(12, 90)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile65" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(106, 75)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile66" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(117, 151)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile67" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(34, 179)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile68" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-60, 201)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile82" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(141, 225)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile83" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(56, 259)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile84" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-29, 290)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile69" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(107, -80)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile70" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(8, -92)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile71" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-75, -101)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile76" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(118, -158)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile77" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(25, -176)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile78" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-62, -191)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile79" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(140, -236)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile80" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(57, -267)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile81" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-29, -293)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile73" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(97, -1)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile74" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile75" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-86, -1)
+metadata/_edit_lock_ = true
+
+[node name="ShurikenProjectile72" parent="ThirdCircle/LargeCircle4" instance=ExtResource("1_1t6ts")]
+position = Vector2(-73, 107)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jbeev")
+metadata/_edit_lock_ = true

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6j3va7v0oorf"]
+
+[ext_resource type="Texture2D" uid="uid://spmi6w6ose2a" path="res://Graphics/Objects/Palm.png" id="1_sgliy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sgliy"]
+size = Vector2(73.57143, 82.85712)
+
+[node name="Palm" type="StaticBody2D"]
+scale = Vector2(0.7, 0.7)
+collision_layer = 4
+collision_mask = 31
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("1_sgliy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8.928569, 214.28566)
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_sgliy")

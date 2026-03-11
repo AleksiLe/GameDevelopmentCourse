@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0yloxel7tla2"]
+
+[ext_resource type="Texture2D" uid="uid://c6sreotso6ft2" path="res://Graphics/Characters/CastleBoss/knight.png" id="1_jsv5k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jsv5k"]
+size = Vector2(71, 192)
+
+[node name="Knight" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 13
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 5)
+shape = SubResource("RectangleShape2D_jsv5k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jsv5k")
