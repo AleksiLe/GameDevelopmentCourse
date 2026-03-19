@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds100w5fdgtd3"]
+
+[ext_resource type="Texture2D" uid="uid://dhycs5e3we4gw" path="res://Graphics/Characters/CastleEnemies/ghost.png" id="1_d75gl"]
+[ext_resource type="Script" uid="uid://c44ljmlt7iy24" path="res://Scenes/Phases/rotator.gd" id="1_n8ena"]
+
+[node name="Phase2" type="Node2D"]
+
+[node name="Rotator" type="Node2D" parent="."]
+script = ExtResource("1_n8ena")
+
+[node name="Sprite2D" type="Sprite2D" parent="Rotator"]
+position = Vector2(1152, 0)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_d75gl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Rotator"]
+position = Vector2(0, 1152)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_d75gl")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Rotator"]
+position = Vector2(0, -1152)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_d75gl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Rotator"]
+position = Vector2(-1152, 0)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_d75gl")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="timeout" from="Timer" to="Rotator" method="_on_timer_timeout"]

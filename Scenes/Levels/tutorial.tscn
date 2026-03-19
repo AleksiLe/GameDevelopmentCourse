@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://ysdfdiy1ratw"]
+[gd_scene load_steps=10 format=4 uid="uid://ysdfdiy1ratw"]
 
 [ext_resource type="PackedScene" uid="uid://b1ril8qkxsqnj" path="res://Scenes/Levels/level.tscn" id="1_e3iji"]
 [ext_resource type="Script" uid="uid://ck71gycuq1qnx" path="res://Scenes/Levels/tutorial.gd" id="2_eqxtb"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cbtuwaqvo5hda" path="res://Graphics/Ground/islandTilemap.png" id="5_302wg"]
 [ext_resource type="PackedScene" uid="uid://b6j3va7v0oorf" path="res://Scenes/Objects/palm.tscn" id="5_idsh5"]
 [ext_resource type="PackedScene" uid="uid://cdhn1dvvmpyte" path="res://Scenes/Characters/sandman.tscn" id="6_idsh5"]
-[ext_resource type="PackedScene" uid="uid://d1xp8vvltah14" path="res://Scenes/Phases/shuriken_phase.tscn" id="7_mhlsa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fenkg"]
 resource_name = "Bond"
@@ -138,8 +137,5 @@ position = Vector2(3594, -1522.0001)
 
 [node name="Palm34" parent="Objects" index="17" instance=ExtResource("5_idsh5")]
 position = Vector2(851.99994, -1657.9999)
-
-[node name="ShurikenPhase" parent="." index="6" instance=ExtResource("7_mhlsa")]
-position = Vector2(2118, 618)
 
 [connection signal="leaf_projectile" from="Enemies/Sandman" to="." method="_on_sandman_leaf_projectile"]

@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://dyo4pgp0ate36"]
+[gd_scene load_steps=11 format=4 uid="uid://dyo4pgp0ate36"]
 
 [ext_resource type="PackedScene" uid="uid://b1ril8qkxsqnj" path="res://Scenes/Levels/level.tscn" id="1_p8tbq"]
 [ext_resource type="Script" uid="uid://dwx4kq68q02gv" path="res://Scenes/Levels/castle.gd" id="2_3pe1m"]
 [ext_resource type="Texture2D" uid="uid://bkhuu23i7haox" path="res://Graphics/Ground/castleTilemap.png" id="3_p8tbq"]
 [ext_resource type="Texture2D" uid="uid://cy53o1jypcm32" path="res://Graphics/Ground/castleDarkTileMap.png" id="3_u318u"]
 [ext_resource type="PackedScene" uid="uid://c3wrqeqjgccrp" path="res://Scenes/Characters/ghost.tscn" id="5_u318u"]
+[ext_resource type="PackedScene" uid="uid://b0yloxel7tla2" path="res://Scenes/Characters/knight.tscn" id="6_vyyb6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qtww0"]
 texture = ExtResource("3_u318u")
@@ -128,6 +129,9 @@ position = Vector2(2047.0002, -158.00024)
 [node name="Ghost9" parent="Enemies" index="8" instance=ExtResource("5_u318u")]
 position = Vector2(4315, 1493.0001)
 
+[node name="Knight" parent="Enemies" index="9" instance=ExtResource("6_vyyb6")]
+position = Vector2(6623.0005, 1247.0001)
+
 [node name="Objects" parent="." index="4"]
 metadata/_edit_lock_ = true
 
@@ -168,4 +172,6 @@ position = Vector2(6629, 2596)
 [connection signal="ghost_projectile" from="Enemies/Ghost7" to="." method="_on_ghost_ghost_projectile"]
 [connection signal="ghost_projectile" from="Enemies/Ghost8" to="." method="_on_ghost_ghost_projectile"]
 [connection signal="ghost_projectile" from="Enemies/Ghost9" to="." method="_on_ghost_ghost_projectile"]
+[connection signal="phase1_projectile" from="Enemies/Knight" to="." method="_on_knight_phase_1_projectile"]
+[connection signal="phase1_stop" from="Enemies/Knight" to="." method="_on_knight_phase_1_stop"]
 [connection signal="body_entered" from="Objects/Area2D" to="." method="_on_area_2d_body_entered"]
