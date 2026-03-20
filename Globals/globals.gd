@@ -9,4 +9,4 @@ var player_health = 100:
 		player_health = value
 		player_health_change.emit()
 		
-var player_dmg: float = 100
+var player_dmg: float = 25

@@ -1,10 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0yloxel7tla2"]
+[gd_scene load_steps=7 format=3 uid="uid://b0yloxel7tla2"]
 
 [ext_resource type="Script" uid="uid://kgabgsd4rjqv" path="res://Scenes/Characters/knight.gd" id="1_7j8xp"]
 [ext_resource type="Texture2D" uid="uid://c6sreotso6ft2" path="res://Graphics/Characters/CastleBoss/knight.png" id="1_jsv5k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jsv5k"]
 size = Vector2(71, 192)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_offgb"]
+bg_color = Color(0, 0, 0, 0.50980395)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7j8xp"]
+bg_color = Color(0.13333334, 0.72156864, 0, 0.50980395)
+
+[sub_resource type="Theme" id="Theme_offgb"]
+ProgressBar/styles/background = SubResource("StyleBoxFlat_offgb")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_7j8xp")
 
 [node name="Knight" type="CharacterBody2D"]
 collision_layer = 2
@@ -20,5 +30,15 @@ texture = ExtResource("1_jsv5k")
 
 [node name="AttackCooldown" type="Timer" parent="."]
 wait_time = 0.75
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -45.0
+offset_top = 111.0
+offset_right = 45.0
+offset_bottom = 125.0
+theme = SubResource("Theme_offgb")
+max_value = 1000.0
+value = 1000.0
+show_percentage = false
 
 [connection signal="timeout" from="AttackCooldown" to="." method="_on_attack_cooldown_timeout"]

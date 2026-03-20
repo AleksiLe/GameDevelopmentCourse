@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0yppkmxnbkc4"]
+
+[ext_resource type="Script" uid="uid://ctiwfy3f7tbwh" path="res://Scenes/Projectiles/knight_projectile.gd" id="1_6gd5g"]
+[ext_resource type="Texture2D" uid="uid://bctp554hyqquy" path="res://Graphics/Projectiles/knight_projectile.png" id="2_uccer"]
+
+[node name="KnightProjectile" type="Area2D"]
+collision_layer = 8
+collision_mask = 5
+script = ExtResource("1_6gd5g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_uccer")
+
+[node name="ProjectileTimeout" type="Timer" parent="."]
+wait_time = 2.5
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(12, 0, -12, 0, -12, 4, -16, 4, -16, 8, -20, 8, -20, 12, -28, 12, -28, 0, -24, 0, -24, -4, -20, -4, -20, -8, -12, -8, -12, -12, 12, -12, 12, -8, 20, -8, 20, -4, 24, -4, 24, 0, 28, 0, 28, 12, 20, 12, 20, 8, 16, 8, 16, 4, 12, 4)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="ProjectileTimeout" to="." method="_on_projectile_timeout_timeout"]

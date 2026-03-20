@@ -1,5 +1,5 @@
 extends Node2D
-@export var rotation_speed: int = 2.5
+@export var rotation_speed: float = 2
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

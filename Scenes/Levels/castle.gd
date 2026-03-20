@@ -1,6 +1,7 @@
 extends LevelParent
 
 var ghost_projectile: PackedScene = preload("res://Scenes/Projectiles/ghost_projectile.tscn")
+var knight_projectile: PackedScene = preload("res://Scenes/Projectiles/knight_projectile.tscn")
 var wall_block = preload("res://Scenes/Objects/broken_wall.tscn").instantiate()
 var boss = preload("res://Scenes/Characters/knight.tscn").instantiate()
 var shurikenPhase = preload("res://Scenes/Phases/shuriken_phase.tscn").instantiate()
@@ -15,6 +16,13 @@ func _on_ghost_ghost_projectile(pos: Variant, dir: Variant) -> void:
 
 func ghost_shoot(pos: Variant, dir: Variant) -> void:
 	var projectile = ghost_projectile.instantiate() as Area2D
+	projectile.position = pos
+	projectile.rotation = dir.angle() + (PI/2)
+	projectile.direction = dir
+	$Projectiles.add_child(projectile)
+	
+func knight_shoot(pos: Variant, dir: Variant) -> void:
+	var projectile = knight_projectile.instantiate() as Area2D
 	projectile.position = pos
 	projectile.rotation = dir.angle() + (PI/2)
 	projectile.direction = dir
@@ -36,11 +44,17 @@ func _on_area_2d_body_entered(_body: Node2D) -> void:
 		call_deferred("blockEntranceAndStartPhase1")
 		blocked = true
 
-func _on_knight_phase_1_projectile(pos: Variant, dir: Variant) -> void:
-	ghost_shoot(pos, dir)
-
+func _on_knight_knight_projectile(pos: Variant, dir: Variant) -> void:
+	knight_shoot(pos, dir)
 
 func _on_knight_phase_1_stop() -> void:
 	shurikenPhase.queue_free()
 	startPhase2()
-	
+
+func _on_knight_phase_2_stop() -> void:
+	ghostPhase.queue_free()
+
+
+func _on_knight_phase_3_stop() -> void:
+	await get_tree().create_timer(2.0).timeout
+	get_tree().change_scene_to_file("res://Scenes/Levels/victory_screen.tscn")

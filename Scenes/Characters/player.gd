@@ -39,9 +39,11 @@ func _process(_delta: float) -> void:
 func hit(dmg: float) -> void:
 	Globals.player_health -= dmg
 	if Globals.player_health <= 0:
-		Globals.player_health = 100
-		get_tree().reload_current_scene()
-		
+		call_deferred("restart")
+
+func restart() -> void:
+	Globals.player_health = 100
+	get_tree().reload_current_scene()
 
 func _on_timer_timeout() -> void:
 	can_shoot = true
