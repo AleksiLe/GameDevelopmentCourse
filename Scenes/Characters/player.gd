@@ -43,7 +43,8 @@ func hit(dmg: float) -> void:
 
 func restart() -> void:
 	Globals.player_health = 100
-	get_tree().reload_current_scene()
+	if get_tree():
+		get_tree().reload_current_scene()
 
 func _on_timer_timeout() -> void:
 	can_shoot = true
